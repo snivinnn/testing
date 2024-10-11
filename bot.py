@@ -11,11 +11,12 @@ app = ApplicationBuilder().token("7566081485:AAESjUfs31Aa3zAke2GIN04fr6Ao-Qe3-uM
 
 async def start(update: telegram.Update, context: ContextTypes.DEFAULT_TYPE):
     await context.bot.send_message(
-        chat_id = update.effective_chat.id, text = "Ishan is a nigga")
+        chat_id = update.effective_chat.id, text = f"""
+      nna NAYINTEEEEEMWOLE MYRE THENDINCHETTE PANDIKARIMBARA""")
+    print(update.effective_chat.username, "\n\n\n")
+
 
 start_handler = CommandHandler("start", start)
 app.add_handler(start_handler)
 
 app.run_polling()
-
-
